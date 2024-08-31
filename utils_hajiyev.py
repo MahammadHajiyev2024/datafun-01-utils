@@ -1,4 +1,4 @@
-''' Iteration 3 
+''' Iteration 4
 
 Module: Mo is doing Analytics
 
@@ -13,6 +13,9 @@ Process:
 
 I'll test it in an online interpreter to ensure this version runs correctly before continuing.
 '''
+#import necessary modules in order to be able to use mean and standart Deviation
+import statistics
+
 #####################################
 #Declare Global Variables
 #####################################
@@ -28,6 +31,15 @@ skills_offered: list = ["Data Analysis","Machine Learning", "Business Intelligen
 
 #Client Satisfaction Scores
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+
+#####################################
+#Calculating basic statistics using min,max,mean and stdev
+#####################################
+
+min_score: float = min(client_satisfaction_scores)
+max_score: float = max(client_satisfaction_scores)
+mean_score: float = statistics.mean(client_satisfaction_scores)
+stdev_score: float = statistics.stdev(client_satisfaction_scores)
 
 #####################################
 # Declare a global variable named byline.
@@ -65,4 +77,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
