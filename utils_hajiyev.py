@@ -1,4 +1,5 @@
-''' Iteration 4
+
+''' Iteration 5
 
 Module: Mo is doing Analytics
 
@@ -32,6 +33,12 @@ skills_offered: list = ["Data Analysis","Machine Learning", "Business Intelligen
 #Client Satisfaction Scores
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
+#The number of employees in the company
+number_of_employees: int = 124
+
+#Ranking among competitors
+company_ranking: int = 6
+
 #####################################
 #Calculating basic statistics using min,max,mean and stdev
 #####################################
@@ -53,6 +60,12 @@ Has International Clients:  {has_international_clients}
 Years in Operation:  {years_in_operation}
 Skills Offered:  {skills_offered}
 Client Satisfaction Scores:  {client_satisfaction_scores}
+Number of Employees:  {number_of_employees}
+Company Ranking:  {company_ranking}
+Minimum Satisfaction Score: {min_score}
+Maximum Satisfaction Score: {max_score}
+Mean Satisfaction Score: {mean_score:.2f}
+Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
 """
 
 #####################################
@@ -77,3 +90,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
