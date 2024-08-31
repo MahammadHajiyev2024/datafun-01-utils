@@ -1,4 +1,4 @@
-''' Iteration 2 - improve byline
+''' Iteration 3 
 
 Module: Mo is doing Analytics
 
@@ -14,10 +14,34 @@ Process:
 I'll test it in an online interpreter to ensure this version runs correctly before continuing.
 '''
 #####################################
+#Declare Global Variables
+#####################################
+
+#Check whether company has international clients
+has_international_clients: bool = True
+
+#Create a variable that shows the number of years of operation
+years_in_operation: int = 10
+
+#String list of skills offered by the company
+skills_offered: list = ["Data Analysis","Machine Learning", "Business Intelligence"]
+
+#Client Satisfaction Scores
+client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+
+#####################################
 # Declare a global variable named byline.
 #####################################
 
-byline: str = 'Mo is doing Analytics'
+byline: str = f"""
+-----------------------------
+Mo is doing Analytics: the stats that you need...
+-----------------------------
+Has International Clients:  {has_international_clients}
+Years in Operation:  {years_in_operation}
+Skills Offered:  {skills_offered}
+Client Satisfaction Scores:  {client_satisfaction_scores}
+"""
 
 #####################################
 #Define the get_byline() function
@@ -41,3 +65,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
