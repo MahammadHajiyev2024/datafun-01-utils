@@ -1,5 +1,4 @@
-
-''' Iteration 5
+''' Iteration 5 - with my own variables and statistics
 
 Module: Mo is doing Analytics
 
@@ -39,6 +38,15 @@ number_of_employees: int = 124
 #Ranking among competitors
 company_ranking: int = 6
 
+#Does the company offer insurance benefits
+has_insurance_benefits: bool = True
+
+#Quarterly Profit Rate in sequence for 2023 (in millions)
+profit: list = [34, 28, 56, 43]
+
+
+
+
 #####################################
 #Calculating basic statistics using min,max,mean and stdev
 #####################################
@@ -47,6 +55,10 @@ min_score: float = min(client_satisfaction_scores)
 max_score: float = max(client_satisfaction_scores)
 mean_score: float = statistics.mean(client_satisfaction_scores)
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_quarterly_profit: int = min(profit)
+max_quarterly_profit: int = max(profit)
+mean_quarterly_profit: float = statistics.mean(profit)
+stdev_quarterly_profit: float = statistics.stdev(profit)
 
 #####################################
 # Declare a global variable named byline.
@@ -66,6 +78,10 @@ Minimum Satisfaction Score: {min_score}
 Maximum Satisfaction Score: {max_score}
 Mean Satisfaction Score: {mean_score:.2f}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Maximum of Quarterly Profits: {max_quarterly_profit}
+Minimum of Quarterly Profits: {min_quarterly_profit}
+Mean of Quarterly profits: {mean_quarterly_profit:.2f}
+Standart Deviation of Quarterly Profits: {stdev_quarterly_profit:.2f}
 """
 
 #####################################
@@ -90,4 +106,5 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
 
